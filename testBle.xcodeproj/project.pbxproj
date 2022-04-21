@@ -11,6 +11,7 @@
 		1BD4DBAC2810F4E4003BEFDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD4DBAB2810F4E4003BEFDD /* ContentView.swift */; };
 		1BD4DBAE2810F4E5003BEFDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD4DBAD2810F4E5003BEFDD /* Assets.xcassets */; };
 		1BD4DBB12810F4E5003BEFDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD4DBB02810F4E5003BEFDD /* Preview Assets.xcassets */; };
+		1BD4DBB82811011F003BEFDD /* BLEScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD4DBB72811011F003BEFDD /* BLEScan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1BD4DBAB2810F4E4003BEFDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BD4DBAD2810F4E5003BEFDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD4DBB02810F4E5003BEFDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BD4DBB72811011F003BEFDD /* BLEScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				1BD4DBA92810F4E4003BEFDD /* testBleApp.swift */,
 				1BD4DBAB2810F4E4003BEFDD /* ContentView.swift */,
+				1BD4DBB72811011F003BEFDD /* BLEScan.swift */,
 				1BD4DBAD2810F4E5003BEFDD /* Assets.xcassets */,
 				1BD4DBAF2810F4E5003BEFDD /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				1BD4DBAC2810F4E4003BEFDD /* ContentView.swift in Sources */,
 				1BD4DBAA2810F4E4003BEFDD /* testBleApp.swift in Sources */,
+				1BD4DBB82811011F003BEFDD /* BLEScan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +199,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +274,7 @@
 				DEVELOPMENT_TEAM = B394B8PA37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Uses Bluetooth to determine nearby people/devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +304,7 @@
 				DEVELOPMENT_TEAM = B394B8PA37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Uses Bluetooth to determine nearby people/devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

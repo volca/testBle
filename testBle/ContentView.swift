@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import CoreBluetooth
 
 struct ContentView: View {
+    @ObservedObject var bleScan = BLEScan()
+
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onAppear(perform: startScan)
+    }
+    
+    private func startScan(){
+        bleScan.startCentralManager()
     }
 }
 
